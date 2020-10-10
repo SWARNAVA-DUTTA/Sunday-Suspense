@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "727907688738",
+    "firebase_url": "https://sunday-suspense-audio.firebaseio.com",
+    "project_id": "sunday-suspense-audio",
+    "storage_bucket": "sunday-suspense-audio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727907688738:android:e22a1d839524d5188f457b",
+        "android_client_info": {
+          "package_name": "dutta.swarnava.sundaysuspense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727907688738-t0l3jrdaadkb099dsrsgjoiiasia7dgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dutta.swarnava.sundaysuspense",
+            "certificate_hash": "219df6cca86e008141d3d639a8bcba695d965867"
+          }
+        },
+        {
+          "client_id": "727907688738-er6lsp2b3hlsl1fht49se7dvqcot9jv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1GcvzlAk7Hj4OeyJlsKrtLZw3i9ZB7n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727907688738-er6lsp2b3hlsl1fht49se7dvqcot9jv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

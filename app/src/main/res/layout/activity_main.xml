@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/headphones"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/app_bar_main" />
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:requiresFadingEdge="horizontal"-->
+<!--            android:background="@color/white"-->
+<!--            android:padding="5dp">-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/search"-->
+<!--                android:padding="4dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:id="@+id/search_badge"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Search here"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:id="@+id/search_view"-->
+<!--                android:maxLines="1"-->
+<!--                android:background="@null"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/search_badge"/>-->
+<!--        </RelativeLayout>-->
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recView"
+        android:padding="10dp"
+
+        />
+        <com.example.jean.jcplayer.view.JcPlayerView
+            android:id="@+id/jcplayer"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/jcplayer_background"
+           android:visibility="gone"
+            app:repeat_one_icon_color="@color/white"
+            app:text_audio_title_color="@color/white"
+            app:text_audio_duration_color="@color/white"
+            app:text_audio_current_duration_color="@color/white"
+            app:repeat_icon_color="@color/white"
+            app:seek_bar_color="@color/white"
+            app:random_icon_color="@color/white"
+            app:previous_icon_color="@color/white"
+            app:play_icon_color="@color/white"
+            app:pause_icon_color="@color/white"
+            app:next_icon_color="@color/white"
+            app:progress_color="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            />
+</RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" >
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

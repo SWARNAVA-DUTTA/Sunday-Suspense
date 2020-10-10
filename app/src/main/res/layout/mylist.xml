@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/song">
+
+    <ImageView
+        android:id="@+id/Audioicon"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/Audiotitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/Audioicon"
+
+        android:padding="2dp"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/Audioauthor"
+        android:layout_toRightOf="@+id/Audioicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Audiotitle"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:id="@+id/dwnld"-->
+<!--            android:layout_alignParentRight="true"-->
+
+<!--            android:src="@drawable/download" />-->
+
+</RelativeLayout>
